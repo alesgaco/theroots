@@ -37,7 +37,6 @@ export class ForumPage {
   showComment() {
     let prompt = this.alertCtrl.create({
       title: 'Comment',
-      message: "Enter a comment",
       inputs: [
         {
           name: 'comment',
@@ -71,7 +70,6 @@ export class ForumPage {
   addTopic() {
     let prompt = this.alertCtrl.create({
       title: 'Topic',
-      message: "Enter a topic",
       inputs: [
         {
           name: 'topic',
@@ -90,16 +88,12 @@ export class ForumPage {
             var el: HTMLElement = document.getElementById('topics');
             console.log(data)
             console.log(el.innerHTML)
-            var newCard =       '<ion-card>' +
-            '<ion-card-header>' +
+            var newCard =       '<ion-card class="card card-md">' +
+            '<ion-card-header class="card-header card-header-md">' +
             data.topic +
             '</ion-card-header>' +
             '<ion-card-content>' +
             ' Comments:' +
-            '  <button  ion-item>' +
-            '      <ion-icon name="beer" item-start></ion-icon>' +
-            '      Comment' +
-            '    </button>' +
             ' </ion-card-content>' +
             '</ion-card>' ;
               el.innerHTML = el.innerHTML  + newCard

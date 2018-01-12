@@ -1,10 +1,11 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
-          <img  width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/> Ideas
+      IDEAS
+      <ion-title >
+          <img width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/>
       </ion-title>
     </ion-navbar>
-  </ion-header>
+</ion-header>
   
   <ion-content padding>
       <ion-card>
@@ -15,7 +16,7 @@
 
         <div id="ideas"></div>
         <ion-fab right bottom>
-            <button (click)=addIdea() ion-fab color="light" mini><ion-icon name="add"></ion-icon></button>
+            <button (click)=addIdea() ion-fab color="light" mini><ion-icon name="bulb"></ion-icon></button>
           </ion-fab>
   </ion-content>
   <ion-footer>
@@ -29,7 +30,7 @@
               <img (click)="pushPages('forum')" width="80" height="80" src="./assets/imgs/chat2.png"/>
            </ion-col>
           <ion-col align-self-center>
-          <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/football.png"/>
+          <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/puzzle.png"/>
           </ion-col>
         </ion-row>
       </ion-grid>

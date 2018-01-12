@@ -1,9 +1,10 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
-          <img  width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/> Forum
+      FORUM
+      <ion-title >
+          <img width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/>
       </ion-title>
-    </ion-navbar>
+   </ion-navbar>
   </ion-header>
   
   <ion-content padding>
@@ -15,7 +16,7 @@
            Comments:
            <div id="comments"></div>
             <button (click)=showComment() ion-item>
-                <ion-icon name="beer" item-start></ion-icon>
+                <ion-icon name="chatbubbles" item-start></ion-icon>
                 Comment
               </button>
           </ion-card-content>
@@ -37,7 +38,7 @@
               <img (click)="pushPages('ideas')" width="80" height="80" src="./assets/imgs/ideas.png"/>
           </ion-col>
           <ion-col align-self-center>
-          <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/football.png"/>
+          <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/puzzle.png"/>
           </ion-col>
         </ion-row>
       </ion-grid>

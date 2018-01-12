@@ -1,13 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-        <img  width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/> Home
+    HOME
+    <ion-title >
+        <img width="80"  src="./assets/imgs/logo-legrand-vector.jpg"/>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  Welcome to The roots
+
+<ion-card>
+    <ion-card-header>
+        LOGIN
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list>
+            <ion-item>
+                <ion-input  placeholder="User"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+        </ion-list>
+        
+        <button ion-item  >
+          <div style="text-align: center; font-size: 3ch">
+              <ion-icon  name="contact" item-start></ion-icon>
+          </div>
+          </button>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
 <ion-footer>
   <ion-toolbar>
@@ -23,7 +46,7 @@
             <img (click)="pushPages('ideas')" width="80" height="80" src="./assets/imgs/ideas.png"/>
         </ion-col>
         <ion-col align-self-center>
-        <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/football.png"/>
+        <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/puzzle.png"/>
         </ion-col>
       </ion-row>
     </ion-grid>

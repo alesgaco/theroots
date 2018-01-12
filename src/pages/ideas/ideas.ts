@@ -32,7 +32,6 @@ export class IdeasPage {
   addIdea() {
     let prompt = this.alertCtrl.create({
       title: 'Ideas',
-      message: "Enter a idea",
       inputs: [
         {
           name: 'comment',
@@ -51,12 +50,8 @@ export class IdeasPage {
             var el: HTMLElement = document.getElementById('ideas');
             console.log(data)
             console.log(el.innerHTML)
-            if(el.innerHTML == ""){
-              el.innerHTML = el.innerHTML  + (data.comment)
-            }else{
-              el.innerHTML = el.innerHTML + "<br>" + (data.comment)
+              el.innerHTML = el.innerHTML  +  "<ion-card class='card card-md' ><ion-card-header class='card-header card-header-md'>" + (data.comment) + "</ion-card-header></ion-card>"
             }
-             }
         }
       ]
     });
