@@ -4,6 +4,7 @@ import { ForumPage } from '../forum/forum';
 import { GamesPage } from '../games/games';
 import { NewsPage } from '../news/news';
 import { IdeasPage } from '../ideas/ideas';
+import { UsersPage } from '../users/users';
 
 @Component({
   selector: 'page-home',
@@ -18,5 +19,7 @@ export class HomePage {
   if(destination == "games") this.navCtrl.push(GamesPage)
   if(destination == "news") this.navCtrl.push(NewsPage)
   if(destination == "ideas") this.navCtrl.push(IdeasPage)
+  if(destination == "users") this.navCtrl.push(UsersPage)
+ 
 }
 }

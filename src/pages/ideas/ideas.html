@@ -11,6 +11,7 @@
       <ion-card>
           <ion-card-header>
               this is a fake idea
+              <br><span style="color:green;  padding-right: 5px;">Like</span><ion-icon style = "color: green;  text-align:right !important" item-start="" name="thumbs-up" role="img" class="icon icon-md ion-md-thumbs-up item-icon" aria-label="thumbs-up" ng-reflect-name="thumbs-up"></ion-icon>
           </ion-card-header>
         </ion-card>
 
@@ -32,6 +33,9 @@
           <ion-col align-self-center>
           <img (click)="pushPages('games')" width="80" height="80" src="./assets/imgs/puzzle.png"/>
           </ion-col>
+          <ion-col align-self-center>
+            <img (click)="pushPages('users')" width="80" height="80" src="./assets/imgs/maps-and-flags.png"/>
+        </ion-col>
         </ion-row>
       </ion-grid>
     </ion-toolbar>

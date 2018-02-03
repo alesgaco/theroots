@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 import { ForumPage } from '../forum/forum';
 import { GamesPage } from '../games/games';
+import { NewsPage } from '../news/news';
 import { IdeasPage } from '../ideas/ideas';
-import { UsersPage } from '../users/users';
 /**
- * Generated class for the NewsPage page.
+ * Generated class for the UsersPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,25 +14,23 @@ import { UsersPage } from '../users/users';
 
 @IonicPage()
 @Component({
-  selector: 'page-news',
-  templateUrl: 'news.html',
+  selector: 'page-users',
+  templateUrl: 'users.html',
 })
-export class NewsPage {
+export class UsersPage {
 
-  ForumPage: ForumPage;
-  GamesPage: GamesPage;
-  IdeasPage: IdeasPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NewsPage');
+    console.log('ionViewDidLoad UsersPage');
   }
 
   pushPages(destination) {
     if(destination == "forum") this.navCtrl.push(ForumPage)
     if(destination == "games") this.navCtrl.push(GamesPage)
+    if(destination == "news") this.navCtrl.push(NewsPage)
     if(destination == "ideas") this.navCtrl.push(IdeasPage)
-    if(destination == "users") this.navCtrl.push(UsersPage)
+   
   }
 }

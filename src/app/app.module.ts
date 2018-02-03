@@ -11,6 +11,7 @@ import { ForumPage } from '../pages/forum/forum';
 import { GamesPage } from '../pages/games/games';
 import { NewsPage } from '../pages/news/news';
 import { IdeasPage } from '../pages/ideas/ideas';
+import { UsersPage } from '../pages/users/users';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IdeasPage } from '../pages/ideas/ideas';
     ForumPage,
     GamesPage,
     NewsPage,
-    IdeasPage
+    IdeasPage,
+    UsersPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { IdeasPage } from '../pages/ideas/ideas';
     ForumPage,
     GamesPage,
     NewsPage,
-    IdeasPage
+    IdeasPage,
+    UsersPage
   ],
   providers: [
     StatusBar,

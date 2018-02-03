@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { GamesPage } from '../games/games';
 import { NewsPage } from '../news/news';
 import { IdeasPage } from '../ideas/ideas';
+import { UsersPage } from '../users/users';
 import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the ForumPage page.
@@ -32,6 +33,7 @@ export class ForumPage {
     if(destination == "games") this.navCtrl.push(GamesPage)
     if(destination == "news") this.navCtrl.push(NewsPage)
     if(destination == "ideas") this.navCtrl.push(IdeasPage)
+  if(destination == "users") this.navCtrl.push(UsersPage)
   }
 
   showComment() {
@@ -56,9 +58,12 @@ export class ForumPage {
             console.log(data)
             console.log(el.innerHTML)
             if(el.innerHTML == ""){
-              el.innerHTML = el.innerHTML  + (data.comment)
+              el.innerHTML = el.innerHTML  + (data.comment) + '<br><span style="color:green;  padding-right: 5px;">Like</span><ion-icon style = "color: green;  text-align:right !important" item-start="" name="thumbs-up" role="img" class="icon icon-md ion-md-thumbs-up item-icon" aria-label="thumbs-up" ng-reflect-name="thumbs-up"></ion-icon>'
+              
+        
+      
             }else{
-              el.innerHTML = el.innerHTML + "<br>" + (data.comment)
+              el.innerHTML = el.innerHTML + "<br>" + (data.comment) + '<br><span style="color:green;  padding-right: 5px;">Like</span><ion-icon style = "color: green;  text-align:right !important" item-start="" name="thumbs-up" role="img" class="icon icon-md ion-md-thumbs-up item-icon" aria-label="thumbs-up" ng-reflect-name="thumbs-up"></ion-icon>'
             }
              }
         }
